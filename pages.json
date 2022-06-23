@@ -1,0 +1,82 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "淦饭人",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "default"
+			}
+		}, {
+			"path": "components/search/search",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/foods/foods",
+			"style": {
+				"navigationBarTitleText": "全部分类",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "default"
+			}
+
+		}
+	    ,{
+            "path" : "pages/foodList/foodList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Detailed/Detailed",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "菜谱详情",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/Likes/Likes",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#fa2209",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/foods/foods",
+				"iconPath": "static/tabbar/cate.png",
+				"selectedIconPath": "static/tabbar/cate-active.png",
+				"text": "分类"
+			}
+		]
+	}
+}
